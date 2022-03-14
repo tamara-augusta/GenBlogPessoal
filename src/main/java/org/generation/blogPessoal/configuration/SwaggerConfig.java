@@ -31,7 +31,7 @@ public class SwaggerConfig {
 	}
 
 	@Bean
-	public OpenApiCustomiser customerGlobalHeaderOpenApiCustomiser() {
+	public OpenApiCustomiser customerGlobalResponseStatus() {
 
 		return openApi -> {
 			openApi.getPaths().values().forEach(pathItem -> pathItem.readOperations().forEach(operation -> {
